@@ -12,14 +12,20 @@ let Crp305 = new Schema(
             type: String,
             required: true
         },
+        Code: {
+            type: String,
+            default : "crp305",
+        },
         document: [
             {
         public_id:{
          type: String,
+         required: true
          
         },
         url: {
           type:String,
+          required:true
          
         }
          

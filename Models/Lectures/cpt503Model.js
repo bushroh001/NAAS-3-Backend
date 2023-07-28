@@ -14,16 +14,18 @@ let Cpt503 = new Schema(
         },
         Code: {
             type: String,
-            default : "crp503",
+            default : "cpt503",
         },
         document: [
             {
         public_id:{
          type: String,
+         required: true
          
         },
         url: {
           type:String,
+          required:true
          
         }
          
