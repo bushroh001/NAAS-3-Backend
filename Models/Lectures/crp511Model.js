@@ -4,10 +4,19 @@ let Crp511 = new Schema(
     {
    
    
+        CourseCode: {
+            type: String,
+            default : "CRP 511",
+        },
+        CourseTitle: {
+            type: String,
+            default : " Soil Borne and Root Diseases ",
+        },
         Topic: {
             type: String,
             required: true
         },
+
         Description : {
             type: String,
             required: true

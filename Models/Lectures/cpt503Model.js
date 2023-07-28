@@ -3,7 +3,14 @@ const Schema = mongoose.Schema;
 let Cpt503 = new Schema(
     {
    
-   
+        CourseCode: {
+            type: String,
+            default : "CPT 503",
+        },
+        CourseTitle: {
+            type: String,
+            default : "Principles of Nematology ",
+        },
         Topic: {
             type: String,
             required: true

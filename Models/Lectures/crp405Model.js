@@ -3,7 +3,14 @@ const Schema = mongoose.Schema;
 let Crp405 = new Schema(
     {
    
-   
+        CourseCode: {
+            type: String,
+            default : "CRP 405",
+        },
+        CourseTitle: {
+            type: String,
+            default : " Crop Protection and Disease Control ",
+        },
         Topic: {
             type: String,
             required: true

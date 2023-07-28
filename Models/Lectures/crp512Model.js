@@ -8,6 +8,14 @@ let Crp512 = new Schema(
             type: String,
             required: true
         },
+        CourseCode: {
+            type: String,
+            default : "CRP 512",
+        },
+        CourseTitle: {
+            type: String,
+            default : " Plant Disease Control ",
+        },
         Description : {
             type: String,
             required: true

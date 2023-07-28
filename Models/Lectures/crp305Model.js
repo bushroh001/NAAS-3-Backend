@@ -3,7 +3,14 @@ const Schema = mongoose.Schema;
 let Crp305 = new Schema(
     {
    
-   
+        CourseCode: {
+            type: String,
+            default : "CRP 305",
+        },
+        CourseTitle: {
+            type: String,
+            default : " Pests and Microorganisms in Agriculture ",
+        },
         Topic: {
             type: String,
             required: true
