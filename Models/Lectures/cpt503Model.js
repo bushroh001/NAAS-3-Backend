@@ -12,6 +12,10 @@ let Cpt503 = new Schema(
             type: String,
             required: true
         },
+        Code: {
+            type: String,
+            default : "crp503",
+        },
         document: [
             {
         public_id:{
