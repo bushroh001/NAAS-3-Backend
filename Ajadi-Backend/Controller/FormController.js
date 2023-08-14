@@ -16,7 +16,11 @@ const createForm = async (req, res,next) =>  {
          let image = [...req.body.Image];
          let imageBuffer = [];
          for(let i=0; i< image.length; i++){
-          const uploadimage = await cloudinary.uploader.upload(image[i]
+          const uploadimage = await cloudinary.uploader.upload(image[i],
+            {
+              resource_type: "auto",
+            }
+
            )
             imageBuffer.push({
               public_id: uploadimage.public_id,
