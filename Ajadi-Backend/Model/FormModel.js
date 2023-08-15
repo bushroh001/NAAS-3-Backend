@@ -59,6 +59,16 @@ let Form = new Schema(
         required: true,
     },
 
+    WhatsappNo: {
+        type: String,
+        required: true,
+    },
+
+    Sex: {
+        type: String,
+        required: true,
+    },
+
     Age: {
         type: String,
          },

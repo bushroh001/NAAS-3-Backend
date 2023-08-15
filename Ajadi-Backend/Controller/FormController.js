@@ -28,7 +28,7 @@ const createForm = async (req, res,next) =>  {
             })
          }
            
-         req.body.Image= imageBuffer
+         req.body.Image = imageBuffer
 
         const lesson = await Form.create(req.body)
         res.status(201).json({
