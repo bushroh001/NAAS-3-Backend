@@ -48,7 +48,7 @@ const createForm = async (req, res,next) =>  {
  // get all lessons
 
  const getFormData = async (req,res) => {
-   const lesson = await Form.find({}).sort({createdAt:+1})
+   const lesson = await Form.find({}).sort({createdAt:-1})
    res.status(200).json(lesson)
  }
 
