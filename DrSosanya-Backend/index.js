@@ -1,9 +1,9 @@
-const Crp304Routes = require("./DrSosanya-Backend/Routes/Crp304Routes")
-const Crp405Routes = require("./DrSosanya-Backend/Routes/Crp405Routes")
-const Crp511Routes = require("./DrSosanya-Backend/Routes/Crp511Routes")
-const Crp305Routes = require("./DrSosanya-Backend/Routes/Crp305Routes")
-const Crp512Routes = require("./DrSosanya-Backend/Routes/Crp512Routes")
-const Cpt503Routes = require("./DrSosanya-Backend/Routes/Cpt503Routes")
+const Crp304Routes = require("./Routes/Crp304Routes")
+const Crp405Routes = require("./Routes/Crp405Routes")
+const Crp511Routes = require("./Routes/Crp511Routes")
+const Crp305Routes = require("./Routes/Crp305Routes")
+const Crp512Routes = require("./Routes/Crp512Routes")
+const Cpt503Routes = require("./Routes/Cpt503Routes")
 
 
 
@@ -17,8 +17,8 @@ const cors =require("cors")
 
 const app = express()
 
-app.use(bp.json({limit:'10mb'}))
-app.use(bp.urlencoded({ extended: true, limit :'10mb' }))
+app.use(bp.json({limit:'15mb'}))
+app.use(bp.urlencoded({ extended: true, limit :'15mb' }))
 
 app.use(cors());
  const PORT= 4000
