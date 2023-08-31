@@ -1,11 +1,4 @@
-const Crp304Routes = require("./Routes/Crp304Routes")
-const Crp405Routes = require("./Routes/Crp405Routes")
-const Crp511Routes = require("./Routes/Crp511Routes")
-const Crp305Routes = require("./Routes/Crp305Routes")
-const Crp512Routes = require("./Routes/Crp512Routes")
-const Cpt503Routes = require("./Routes/Cpt503Routes")
-
-
+const FormRoutes = require("./IAB-Backend/Routes/FormRoute")
 
 
 
@@ -17,8 +10,8 @@ const cors =require("cors")
 
 const app = express()
 
-app.use(bp.json({limit:'15mb'}))
-app.use(bp.urlencoded({ extended: true, limit :'15mb' }))
+app.use(bp.json({limit:'10mb'}))
+app.use(bp.urlencoded({ extended: true, limit :'10mb' }))
 
 app.use(cors());
  const PORT= 4000
@@ -44,13 +37,7 @@ const connectDB = async ()=> {
 }
 
  
-app.use("/api/crp304", Crp304Routes)
-app.use("/api/crp405", Crp405Routes)
-app.use("/api/crp511", Crp511Routes)
-app.use("/api/crp512", Crp512Routes)
-app.use("/api/crp305", Crp305Routes)
-app.use("/api/cpt503", Cpt503Routes)
-
+app.use("/api/mssnoau/iab", FormRoutes)
 
 
 

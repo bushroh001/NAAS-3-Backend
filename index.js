@@ -1,11 +1,4 @@
-const Crp304Routes = require("./DrSosanya-Backend/Routes/Crp304Routes")
-const Crp405Routes = require("./DrSosanya-Backend/Routes/Crp405Routes")
-const Crp511Routes = require("./DrSosanya-Backend/Routes/Crp511Routes")
-const Crp305Routes = require("./DrSosanya-Backend/Routes/Crp305Routes")
-const Crp512Routes = require("./DrSosanya-Backend/Routes/Crp512Routes")
-const Cpt503Routes = require("./DrSosanya-Backend/Routes/Cpt503Routes")
-
-
+const FormRoutes = require("./IAB-Backend/Routes/FormRoute")
 
 
 
@@ -44,13 +37,7 @@ const connectDB = async ()=> {
 }
 
  
-app.use("/api/crp304", Crp304Routes)
-app.use("/api/crp405", Crp405Routes)
-app.use("/api/crp511", Crp511Routes)
-app.use("/api/crp512", Crp512Routes)
-app.use("/api/crp305", Crp305Routes)
-app.use("/api/cpt503", Cpt503Routes)
-
+app.use("/api/mssnoau/iab", FormRoutes)
 
 
 

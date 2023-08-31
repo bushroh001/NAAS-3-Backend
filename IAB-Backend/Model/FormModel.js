@@ -1,29 +1,31 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-let Crp305 = new Schema(
+let Form = new Schema(
     {
    
-        CourseCode: {
+        Title: {
             type: String,
-            default : "CRP 305",
+            required: true,
         },
-        CourseTitle: {
+        Content1: {
             type: String,
-            default : " Pests and Microorganisms in Agriculture ",
         },
-        Topic: {
+
+        Content2: {
             type: String,
-            required: true
         },
-        Description : {
+
+        Conclusion: {
             type: String,
-            required: true
         },
-        Code: {
+
+        date: {
             type: String,
-            default : "crp305",
+            
         },
-        document: [
+
+       
+        Image: [
             {
         public_id:{
          type: String,
@@ -37,11 +39,11 @@ let Crp305 = new Schema(
         }
          
          },
-    ],    
+    ], 
    
  },
 
 { timestamps: true }
 
 );
-module.exports = mongoose.model('Crp305', Crp305);
+module.exports = mongoose.model('Form', Form);
