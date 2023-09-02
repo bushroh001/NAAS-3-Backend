@@ -7,15 +7,9 @@ let Form = new Schema(
             type: String,
             required: true,
         },
-        Content1: {
-            type: String,
-        },
+      
 
-        Content2: {
-            type: String,
-        },
-
-        Conclusion: {
+        Description: {
             type: String,
         },
 
