@@ -1,4 +1,12 @@
-const FormRoutes = require("./IAB-Backend/Routes/FormRoute")
+const AEC301Routes = require("./NAAS-3-Backend/Routes/AEC301Routes")
+const AEC303Routes = require("./NAAS-3-Backend/Routes/AEC303Routes")
+const ANS301Routes = require("./NAAS-3-Backend/Routes/ANS301Routes")
+const AXD301Routes = require("./NAAS-3-Backend/Routes/AXD301Routes")
+const CPP301Routes = require("./NAAS-3-Backend/Routes/CPP301Routes")
+const CPP303Routes = require("./NAAS-3-Backend/Routes/CPP303Routes")
+const SLM301Routes = require("./NAAS-3-Backend/Routes/SLM301Routes")
+
+
 
 
 
@@ -37,7 +45,14 @@ const connectDB = async ()=> {
 }
 
  
-app.use("/api/mssnoau/iab", FormRoutes)
+app.use("/api/aec301", AEC301Routes)
+app.use("/api/aec303", AEC303Routes)
+app.use("/api/ans301", ANS301Routes)
+app.use("/api/axd301", AXD301Routes)
+app.use("/api/cpp301", CPP301Routes)
+app.use("/api/cpp303", CPP303Routes)
+app.use("/api/slm301", SLM301Routes)
+
 
 
 
