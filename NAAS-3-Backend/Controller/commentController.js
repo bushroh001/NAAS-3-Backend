@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose')
-const Comment = require("../Models/Lectures/CommentModel")
+const Comment = require("../Models/Lectures/commentModel")
 
 
 
