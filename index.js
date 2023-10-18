@@ -5,6 +5,8 @@ const AXD301Routes = require("./NAAS-3-Backend/Routes/AXD301Routes")
 const CPP301Routes = require("./NAAS-3-Backend/Routes/CPP301Routes")
 const CPP303Routes = require("./NAAS-3-Backend/Routes/CPP303Routes")
 const SLM301Routes = require("./NAAS-3-Backend/Routes/SLM301Routes")
+const commentRoutes = require("./NAAS-3-Backend/Routes/commentRoutes")
+
 
 
 
@@ -52,6 +54,7 @@ app.use("/api/axd301", AXD301Routes)
 app.use("/api/cpp301", CPP301Routes)
 app.use("/api/cpp303", CPP303Routes)
 app.use("/api/slm301", SLM301Routes)
+app.use("/api/comment", commentRoutes)
 
 
 
