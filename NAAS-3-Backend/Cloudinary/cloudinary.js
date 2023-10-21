@@ -1,9 +1,9 @@
 const cloudinary = require("cloudinary").v2
 
 cloudinary.config({
-    cloud_name: "dwsjspwnt",
-    api_key: "398899769288939",
-    api_secret: "baec2HpxDpF1AwwMHYlxlFl7xjc",
+    cloud_name: "dnkma1cpk",
+    api_key: "486622941576114",
+    api_secret: "5hlXVggNouu7Qg1rFCUa6CZHJLQ",
     secure: true
   });
   
