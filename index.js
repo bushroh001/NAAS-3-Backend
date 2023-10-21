@@ -20,7 +20,7 @@ const cors =require("cors")
 
 const app = express()
 
-app.use(bp.json({limit:'10mb'}))
+app.use(bp.json({limit:'15mb'}))
 app.use(bp.urlencoded({ extended: true, limit :'10mb' }))
 
 app.use(cors());
